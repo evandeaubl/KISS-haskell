@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-patch -p1 < ghc-8.8.patch 
+patch -p1 < ghc-8.10.patch
 
 env HOME="$PWD/build" EXTRA_CONFIGURE_OPTS="" ./bootstrap.sh -j --no-doc
 
